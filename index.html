@@ -48,16 +48,16 @@
           </a>
           <ul class="navbar-nav d-flex justify-content-center align-items-center">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Sobre mí</a>
+              <a class="nav-link active" href="#sobre-mi">Sobre mí</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Proyectos</a>
+              <a class="nav-link" href="#proyectos">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Testimonios</a>
+              <a class="nav-link" href="#testimonios">Testimonios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -81,7 +81,7 @@
     </section>
 
     <!-- Sobre mi  -->
-    <section class="sobre-mi seccion-oscura">
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
       <div class="contenedor">
         <h2 class="seccion-titulo">Conoce a Angela Rubio</h2>
         <p class="seccion-texto">
@@ -93,7 +93,7 @@
     </section>
 
     <!-- experiencia -->
-    <section class="experiencia seccion-clara">
+    <section id="experiencia" class="experiencia seccion-clara">
       <div class="container text-center">
         <div class="row">
           <!-- Desarrolo web  -->
@@ -145,7 +145,7 @@
     </section>
 
     <!-- Proyectos  -->
-    <section class="proyectos-recientes seccion-clara d-flex flex-column text-center">
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column text-center">
       <h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
       <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente</h3>
 
@@ -270,8 +270,8 @@
     </section>
 
     <!-- Articulos  -->
-    <section class="articulos justify-content-start seccion-oscura ">
-      <h2 class="seccion-titulo">Articulos</h2>
+    <section id="articulos" class="articulos justify-content-start seccion-clara">
+      <h2 class="seccion-titulo">Artículos</h2>
       <div class="card"">
         <div class="card-header">
             Más recientes
@@ -297,7 +297,111 @@
           </a>
         </ul>
       </div>
+      <a href="https://www.freecodecamp.org/espanol/news/" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más artículos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
     </section>
+
+    <!-- Testimonios  -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes</h3>
+    
+      <!-- Carrusel  -->
+    <div id="testimonios-carrusel" class="carousel slide carousel-dark">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle " src="imagenes/cliente1.svg" alt="Foto de Gino">
+            <p class="testimonio-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aut magni ducimus cumque repellendus maiores architecto voluptatibus quisquam provident temporibus?</p>
+            <div class="testimonio-info">
+              <p class="cliente">Gino</p>
+              <p class="cargo">Gerente de proyectos en DesarrolloWeb</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle " src="imagenes/cliente2.svg" alt="Foto de Isabel">
+            <p class="testimonio-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aut magni ducimus cumque repellendus maiores architecto voluptatibus quisquam provident temporibus?</p>
+            <div class="testimonio-info">
+              <p class="cliente">Isabel</p>
+              <p class="cargo">Gerente de proyectos en DesarrolloWeb</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle " src="imagenes/cliente3.svg" alt="Foto de Bryan">
+            <p class="testimonio-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque aut magni ducimus cumque repellendus maiores architecto voluptatibus quisquam provident temporibus?</p>
+            <div class="testimonio-info">
+              <p class="cliente">Bryan</p>
+              <p class="cargo">Gerente de proyectos en DesarrolloWeb</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    </section>
+
+    <!-- Contacto  -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container ">
+        <div class="container rectangulo text-center d-flex justify-content-evenly ">
+          <div class="row">
+            <div class="col-12  col-md-4 seccion-titulo">¡Hablemos!</div>
+            <div class="col-12 col-md-4 descripcion mb-3 mb-md-0 ">Contáctame para iniciar tu proyecto de desarrolo Web, te encantará el proceso y aún más el resultado</div>
+            <div class="col-12 col-md-4  ">
+              <a href="mailto: angela.rubio@genstudents.org">
+                <button class="button">
+                  Contacto 
+                  <i class="bi bi-envelope-at-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Pie de página (Footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center ">
+      <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del proyecto">
+      <p class="footer-texto text-center ">Aprendo y creo todos los días <br>Creemos un proyectos juntos</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://twitter.com/freeCodeCamp" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="https://github.com/freeCodeCamp" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/school/free-code-camp/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/freecodecampes/?hl=es-la" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto: angela.rubio@genstudents.org" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Angela Rubio (2024) &#169;</div> 
+    </footer>
+
     <script
       crossorigin="anonymous"
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
